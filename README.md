@@ -1,3 +1,5 @@
 # HTML website
 
-Basic HTML website to serve as the main view of your work in the course.
+This is the HTML to my website!
+
+[jeffreysalewis.com](https://jeffreysalewis.com)
