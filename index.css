@@ -2,3 +2,16 @@
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   box-sizing: border-box;
 }
+
+a:link, a:visited {
+  background-color: #ff88aa;
+  color: #003377;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block
+}
+
+a:hover, a:active {
+  background-color: #ffaacc;
+}
