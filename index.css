@@ -31,14 +31,17 @@ main {
 
 h1 {
   font-size: 60px;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 48px;
+  font-weight: 800;
 }
 
 .txt {
   text-align: center;
+  font-weight: 800;
 }
 
 menu {
