@@ -17,16 +17,24 @@
   /*font-family: "Nothing+You+Could+Do", "Comic Sans", cursive;*/
   /*font-family: 'you_keep_runningregular', 'better_minecraftregular', "Comic Sans", cursive;*/
   font-family: 'you keep running', 'better_minecraftregular', "Comic Sans", cursive;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 800;
   box-sizing: border-box;
+  /* padding: 0 4px; */
+  font-style: bold;
+}
+
+main {
+  padding: 0 4px;
+  padding-top: 50px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 48px;
 }
 
 .txt {
@@ -38,10 +46,13 @@ menu {
   display: flex;
   flex-direction: row !important;
   list-style: none;
+  margin-top: 0;
+  padding-left: 0;
 }
 
-.navbar-brand {
-  padding-left: 0.3em;
+header {
+  flex: 0 50px;
+  height: 50px;
   border-bottom: solid rgb(182, 182, 182) thin;
 }
 
@@ -49,9 +60,24 @@ menu .nav-item {
   padding: 0 0.3em;
 }
 
-a:link, a:visited {
+#home:link, #home:visited {
   background-color: #ff88aa;
-  color: white;
+  color: black;
+  padding: 14px 25px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  display: inline-block;
+}
+
+#home:hover, #home:active {
+  background-color: #ffaacc;
+}
+
+#portfolio:link, #portfolio:visited {
+  background-color: #88aaff;
+  color: black;
   padding: 14px 25px;
   border-radius: 5px;
   text-align: center;
@@ -59,8 +85,43 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
-  background-color: #ffaacc;
+#portfolio:hover, #portfolio:active {
+  background-color: #aaccff;
+}
+
+#startup:link, #startup:visited {
+  background-color: #aa88ff;
+  color: black;
+  padding: 14px 25px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#startup:hover, #startup:active {
+  background-color: #ccaaff;
+}
+
+#simon:link, #simon:visited {
+  background-color: #88ffaa;
+  color: black;
+  padding: 14px 25px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#simon:hover, #simon:active {
+  background-color: #aaffcc;
+}
+
+.nav-item{
+  text-align: center;
+  background-color: none;
+  padding: 0 0.3em;
+  border-radius: none;
 }
 
 img, video {
@@ -95,5 +156,14 @@ img, video {
     width: 100%;
     height: 100%;
     flex: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    display: none;
+  }
+  main {
+    flex: 1 100vh;
   }
 }
