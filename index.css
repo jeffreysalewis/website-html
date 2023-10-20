@@ -132,6 +132,21 @@ menu .nav-item {
   background-color: #aaffcc;
 }
 
+#otrart:link, #otrart:visited {
+  background-color: #ccee11;
+  color: black;
+  padding: 14px 25px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  display: inline-block;
+}
+
+#otrart:hover, #otrart:active {
+  background-color: #eeff33;
+}
+
 .nav-item{
   text-align: center;
   background-color: none;
