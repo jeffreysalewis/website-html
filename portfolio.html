@@ -30,11 +30,114 @@
     </header>
     <main>
       <section>
-        <h1 class="txt">My Art Portfolio</h1>
+        <h1 class="txt">Art Portfolio</h1>
         <section>
           <h2 class="txt">
             FX Animation
           </h2>
+          <div class="ro">
+            <div class="colum2">
+              <video onclick="openModal2();currentSlide2(1)" class="hover-shadow" class="luz" autoplay loop>
+                <source src="/miscosas/JeffreyLewis_particlefinal3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="colum2">
+              <video onclick="openModal2();currentSlide2(2)" class="hover-shadow" class="luz" autoplay loop>
+                <source src="/miscosas/JeffreyLewis_hairfinal2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="colum2">
+              <video onclick="openModal2();currentSlide2(3)" class="hover-shadow" class="luz" autoplay loop>
+                <source src="/miscosas/JeffreyLewis_fluidfinal3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <!--<div class="colum">
+              <video onclick="openModal2();currentSlide2(4)" class="hover-shadow" class="luz">
+                <source src="/miscosas/JeffreyLewis_particlefinal3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>-->
+          </div>
+  
+          <!-- The Modal/Lightbox -->
+          <div id="myModal2" class="modal">
+            <span class="close cursor" onclick="closeModal2()">&times;</span>
+            <div class="modal-content">
+  
+              <div class="mySlides2">
+                <div class="numbertext">1 / 4</div>
+                <video controls style="width:100%" class="luz">
+                  <source src="/miscosas/JeffreyLewis_particlefinal3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+  
+              <div class="mySlides2">
+                <div class="numbertext">2 / 4</div>
+                <video controls style="width:100%" class="luz">
+                  <source src="/miscosas/JeffreyLewis_hairfinal2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+  
+              <div class="mySlides2">
+                <div class="numbertext">3 / 4</div>
+                <video controls style="width:100%" class="luz">
+                  <source src="/miscosas/JeffreyLewis_fluidfinal3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+  
+              <!--<div class="mySlides2">
+                <div class="numbertext">4 / 4</div>
+                <video controls style="width:100%" class="luz">
+                  <source src="/miscosas/JeffreyLewis_particlefinal3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>-->
+  
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+  
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+  
+              <!-- Thumbnail image controls -->
+              <div class="colum2">
+                <video class="demo2" onclick="currentSlide2(1)" alt="Firework" class="luz">
+                  <source src="/miscosas/JeffreyLewis_particlefinal3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+  
+              <div class="colum2">
+                <video class="demo2" onclick="currentSlide2(2)" alt="Hair Groom" class="luz">
+                  <source src="/miscosas/JeffreyLewis_hairfinal2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+  
+              <div class="colum2">
+                <video class="demo2" onclick="currentSlide2(3)" alt="Creek" class="luz">
+                  <source src="/miscosas/JeffreyLewis_fluidfinal3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+  
+              <!--<div class="colum">
+                <video class="demo2" onclick="currentSlide2(4)" alt=" " class="luz">
+                  <source src="/miscosas/JeffreyLewis_particlefinal3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>-->
+            </div>
+          </div>
           <div class="flex-container">
             <video width="640" height="480" controls loop>
               <source src="/miscosas/JeffreyLewis_particlefinal3.mp4" type="video/mp4">
@@ -42,11 +145,11 @@
             </video>
           </div>
           <div class="flex-container">
-            <video width="640" height="480" controls loop>
+            <video width="640" height="480" controls loop class="tin">
               <source src="/miscosas/JeffreyLewis_hairfinal2.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-            <video width="640" height="480" controls loop>
+            <video width="640" height="480" controls loop class="tin">
               <source src="/miscosas/JeffreyLewis_fluidfinal3.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -56,6 +159,85 @@
           <h2 class="txt">
               3D Scenes
           </h2>
+          <section>
+            <!-- Images used to open the lightbox -->
+            <div class="ro">
+              <div class="colum">
+                <img src="/miscosas/escenafinal.png" onclick="openModal();currentSlide(1)" class="hover-shadow" class="luz">
+              </div>
+              <div class="colum">
+                <img src="/miscosas/bug.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" class="luz">
+              </div>
+              <div class="colum">
+                <img src="/miscosas/lego.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" class="luz">
+              </div>
+              <div class="colum">
+                <video onclick="openModal();currentSlide(4)" class="hover-shadow" class="luz" autoplay loop muted>
+                  <source src="/miscosas/mimic.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+    
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+    
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="/miscosas/escenafinal.png" style="width:100%" class="luz">
+                </div>
+    
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="/miscosas/bug.jpg" style="width:100%" class="luz">
+                </div>
+    
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="/miscosas/lego.jpg" style="width:100%" class="luz">
+                </div>
+    
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <video controls style="width:100%" class="luz">
+                    <source src="/miscosas/mimic.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+    
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+    
+                <!-- Thumbnail image controls -->
+                <div class="colum">
+                  <img class="demo" src="/miscosas/escenafinal.png" onclick="currentSlide(1)" alt="Escena" class="luz">
+                </div>
+    
+                <div class="colum">
+                  <img class="demo" src="/miscosas/bug.jpg" onclick="currentSlide(2)" alt="Bug" class="luz">
+                </div>
+    
+                <div class="colum">
+                  <img class="demo" src="/miscosas/lego.jpg" onclick="currentSlide(3)" alt="Lego" class="luz">
+                </div>
+    
+                <div class="colum">
+                  <video class="demo" onclick="currentSlide(4)" alt="Mimic" class="luz">
+                    <source src="/miscosas/mimic.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </section>
           <div class="flex-container">
             <video width="640" height="480" controls loop>
               <source src="/miscosas/mimic.mp4" type="video/mp4">
@@ -66,15 +248,15 @@
             <img src="/miscosas/escenafinal.png" alt="escena" width="1920" height="1080"/>
           </div>
           <div class="flex-container">
-            <img src="/miscosas/bug.jpg" alt="cantfire" width="960" height="540"/>
-            <video width="640" height="480" controls loop>
+            <img src="/miscosas/bug.jpg" alt="cantfire" width="960" height="540" class="tin"/>
+            <video width="640" height="480" controls loop class="tin">
               <source src="/miscosas/fireantfx.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
           <div class="flex-container">
-            <img src="/miscosas/lego.jpg" alt="surfin" width="960" height="540"/>
-            <img src="/miscosas/building.png" alt="misión" width="960" height="540"/>
+            <img src="/miscosas/lego.jpg" alt="surfin" width="960" height="540" class="tin"/>
+            <img src="/miscosas/building.png" alt="misión" width="960" height="540" class="tin"/>
           </div>
         </section>
         <h2 class="txt">
@@ -101,5 +283,6 @@
       <a href="https://jeffreysalewis.com" rel="noopener noreferrer" id="home">Home</a>
       <a href="other_art.html" rel="noopener noreferrer" id="otrart">Other Art</a>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
