@@ -79,3 +79,45 @@ function showSlides2(n) {
   dots2[slideIndex2-1].className += " active";
   captionText2.innerHTML = dots2[slideIndex2-1].alt;
 }
+
+
+//3333333333
+function openModal3() {
+  document.getElementById("myModal3").style.display = "block";
+}
+
+// Close the Modal
+function closeModal3() {
+  document.getElementById("myModal3").style.display = "none";
+}
+
+var slideIndex3 = 1;
+showSlides3(slideIndex3, 1);
+
+// Next/previous controls
+function plusSlides3(n) {
+  showSlides3(slideIndex3 += n);
+}
+
+// Thumbnail image controls
+function currentSlide3(n) {
+  showSlides3(slideIndex3 = n);
+}
+
+function showSlides3(n) {
+  var i;
+  var slides3 = document.getElementsByClassName("mySlides3");
+  var dots3 = document.getElementsByClassName("demo3");
+  var captionText3 = document.getElementById("caption3");
+  if (n > slides3.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = slides3.length}
+  for (i = 0; i < slides3.length; i++) {
+    slides3[i].style.display = "none";
+  }
+  for (i = 0; i < dots3.length; i++) {
+    dots3[i].className = dots3[i].className.replace(" active", "");
+  }
+  slides3[slideIndex3-1].style.display = "block";
+  dots3[slideIndex3-1].className += " active";
+  captionText3.innerHTML = dots3[slideIndex3-1].alt;
+}

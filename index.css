@@ -84,13 +84,13 @@ header {
 }
 
 menu .nav-item {
-  padding: 0 0.3em;
+  padding: 0 0.15em;
 }
 
 #home:link, #home:visited {
   background-color: #ff88aa;
   color: black;
-  padding: 14px 25px;
+  padding: 14px 17px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -105,7 +105,7 @@ menu .nav-item {
 #portfolio:link, #portfolio:visited {
   background-color: #88aaff;
   color: black;
-  padding: 14px 25px;
+  padding: 14px 17px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -119,7 +119,7 @@ menu .nav-item {
 #startup:link, #startup:visited {
   background-color: #aa88ff;
   color: black;
-  padding: 14px 25px;
+  padding: 14px 17px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -133,7 +133,7 @@ menu .nav-item {
 #simon:link, #simon:visited {
   background-color: #88ffaa;
   color: black;
-  padding: 14px 25px;
+  padding: 14px 17px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -147,7 +147,7 @@ menu .nav-item {
 #otrart:link, #otrart:visited {
   background-color: #cccc77;
   color: black;
-  padding: 14px 25px;
+  padding: 14px 17px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -162,7 +162,7 @@ menu .nav-item {
 .nav-item{
   text-align: center;
   background-color: none;
-  padding: 0 0.3em;
+  padding: 0 0.15em;
   border-radius: none;
 }
 
@@ -369,6 +369,10 @@ img.hover-shadow {
     padding: 0px;
   }
   .colum {
+    width: 100%;
+  }
+
+  .colum2 {
     width: 100%;
   }
 }
