@@ -22,6 +22,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+  var cap = ["Bolivian Dinner Scene (Cena Escena) - Maya (Arnold)", "Mailbox Mimic Rig & Rain FX - Maya & Unreal Engine", "Bug Campfire Scene - Maya (Arnold)"];
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
@@ -36,7 +37,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  captionText.innerHTML = cap[(n-1)%3];
 }
 
 //22222222222
@@ -63,6 +64,7 @@ function currentSlide2(n) {
 }
 
 function showSlides2(n) {
+  var cap2 = ["Firework Particle FX - Houdini", "Hair Groom CFX - Houdini", "Water Fluid FX - Houdini"];
   var i;
   var slides2 = document.getElementsByClassName("mySlides2");
   var dots2 = document.getElementsByClassName("demo2");
@@ -77,7 +79,7 @@ function showSlides2(n) {
   }
   slides2[slideIndex2-1].style.display = "block";
   dots2[slideIndex2-1].className += " active";
-  captionText2.innerHTML = dots2[slideIndex2-1].alt;
+  captionText2.innerHTML = cap2[(n-1)%3];
 }
 
 
@@ -105,6 +107,7 @@ function currentSlide3(n) {
 }
 
 function showSlides3(n) {
+  var cap3 = ["Robot Gun FX - Unreal Engine", "Robot Gun FX - Unreal Engine", "Chimney Smoke FX - Unreal Engine"];
   var i;
   var slides3 = document.getElementsByClassName("mySlides3");
   var dots3 = document.getElementsByClassName("demo3");
@@ -119,5 +122,5 @@ function showSlides3(n) {
   }
   slides3[slideIndex3-1].style.display = "block";
   dots3[slideIndex3-1].className += " active";
-  captionText3.innerHTML = dots3[slideIndex3-1].alt;
+  captionText3.innerHTML = cap3[(n-1)%3];
 }

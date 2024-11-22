@@ -251,6 +251,11 @@ img, video {
   width: 33%;
 }
 
+.colum3 {
+  float: left;
+  width: 33%;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -294,7 +299,7 @@ img, video {
 }
 
 /* Hide the slides by default */
-.mySlides, .mySlides2 {
+.mySlides, .mySlides2, .mySlides3 {
   display: none;
 }
 
@@ -373,6 +378,10 @@ img.hover-shadow {
   }
 
   .colum2 {
+    width: 100%;
+  }
+
+  .colum3 {
     width: 100%;
   }
 }
