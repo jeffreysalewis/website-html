@@ -246,6 +246,11 @@ img, video {
   width: 33%;
 }
 
+.yuh {
+  float: left;
+  width: 50%;
+}
+
 .colum2 {
   float: left;
   width: 33%;
@@ -373,7 +378,7 @@ img.hover-shadow {
     height: 100%;
     padding: 0px;
   }
-  .colum {
+  .colum, .yuh {
     width: 100%;
   }
 
